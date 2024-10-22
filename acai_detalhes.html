@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32"
+            href="assets/icon_log.png" />
+        <link rel="stylesheet" href="estilo_acai.css">
+        <title>Açaí</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
+                <h1 class="logo">
+                    Sorveteria <br />
+                    Vasconcelos
+                </h1>
+                <a href="index.html"><img class="img" src="assets/icon_log.png"
+                        alt="SorveMar" />
+                </a>
+            </nav>
+        </header>
+        <h1>MONTE SEU AÇAÍ</h1>
+        <section>
+            <div class="TipoAcai">
+                <label for="acai-tamanho">Monte Seu Açaí:</label>
+                <select id="acai-tamanho" onchange="">
+                    <option value>Selecione</option>
+                    <option value="pequeno">Pequeno - 200 ml</option>
+                    <option value="medio">Médio - 300 ml</option>
+                    <option value="grande">Grande - 500 ml</option>
+                </select>
+                <div class="ver_select">
+                    <div>
+                        <h2>Médio - 300 ml</h2>
+                        <h3>R$ 0,00</h3>
+                        <p>notas</p>
+                    </div>
+                    <img src="assets/açaí.png" alt>
+                </div>
+                <label for="copinho-quantidade">Quantidade:</label>
+                <input type="number" id="copinho-quantidade" min="1" value="1">
+
+                <button class="mostrar"
+                    onclick="toggleSabores('copinho')">Mostrar/Ocultar
+                    Sabores</button>
+            </div>
+
+            <div class="complementos_todos">
+
+                <div class="complementos" id="fruts">
+                    <label>Frutas (R$ 1,00):</label>
+                    <div id="frutas">
+                        <label><input type="checkbox"
+                                value="banana">Banana</label>
+                        <label><input type="checkbox"
+                                value="morango">Morango</label>
+                        <label><input type="checkbox" value="kiwi">Kiwi</label>
+                        <label><input type="checkbox"
+                                value="manga">Manga</label>
+                        <label><input type="checkbox" value="uva">Uva</label>
+                    </div>
+                </div>
+
+                <div class="complementos" id="coberturas">
+                    <label>Coberturas/Caldas:</label>
+                    <div id="caldas">
+                        <label><input type="checkbox"
+                                value="leite condensado">Leite
+                            Condensado</label>
+                        <label><input type="checkbox"
+                                value="chocolate">Chocolate</label>
+                        <label><input type="checkbox"
+                                value="morango">Morango</label>
+                        <label><input type="checkbox"
+                                value="chiclete">Chiclete</label>
+                        <label><input type="checkbox" value="acai">Açaí</label>
+                    </div>
+                </div>
+                <div class="complementos" id="compl">
+                    <label>Complementos:</label>
+                    <div id="complementos">
+                        <label><input type="checkbox"
+                                value="granola">Granola</label>
+                        <label><input type="checkbox"
+                                value="amendoim">Amendoim</label>
+                        <label><input type="checkbox"
+                                value="gotas de chocolate">Gotas de
+                            Chocolate</label>
+                        <label><input type="checkbox" value="ovo maltine">Ovo
+                            Maltine</label>
+
+                    </div>
+                </div>
+                <div class="complementos" id="compl_premium">
+                    <label>Complementos Premium (R$ 3,00):</label>
+                    <div id="complemento">
+                        <label><input type="checkbox"
+                                value="creme de avela">Creme de Avelã</label>
+                        <label><input type="checkbox" value="creme branco">Creme
+                            Branco</label>
+                        <label><input type="checkbox"
+                                value="creme de chocolate">Creme de
+                            Chocolate</label>
+                    </div>
+                </div>
+
+            </div>
+
+            <div>
+                <div class="valorTotal">
+                    <h3>valor Total=</h3>
+                    <h3>R$ 0,00</h3>
+                </div>
+                <button class="shopping"><img class="car"
+                        src="assets/shopping.png"
+                        alt></button>
+
+            </div>
+
+        </section>
+
+    </body>
+</html>
