@@ -40,7 +40,7 @@ h4, p{
     margin-top: 20px;
 }
 
-.finalizar {
+.finalizar, .voltar {
     display: block;
     width: 100%;
     padding: 10px;
@@ -50,9 +50,19 @@ h4, p{
     border-radius: 5px;
     cursor: pointer;
 }
+.voltar{
+    margin: 0 10px 0 0;
+}
+.finalizar{
+    margin: 0 0 0 10px;
+}
 
 .finalizar:hover {
     background-color: #218838;
+}
+
+.botao{
+    display: flex;
 }
 
 @media (max-width: 800px) {
@@ -94,7 +104,11 @@ h4, p{
         <div class="total">
             <h2>Total: R$ XX,XX</h2>
         </div>
+        <div class="botao">
+        <button class="voltar">Voltar</button>
         <button class="finalizar">Finalizar Compra</button>
+        </div>
+        
     </div>
 </body>
 </html>
