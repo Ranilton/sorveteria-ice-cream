@@ -8,6 +8,7 @@
   --grd1: #6b0380;
   --sorv_claro: rgb(13, 136, 218);
   --sorv_escuro: rgb(78, 61, 236);
+  --sorv_azul: rgb(0, 0, 192);
   --acai_claro: rgb(145, 57, 185);
   --acai_escuro: #710280;
   --milk_claro: rgb(13, 136, 218);
@@ -150,7 +151,7 @@ article {
 .apresentacao_sorv h2 {
   font-size: 30px;
   margin-bottom: 20px;
-  color: var(--white);
+  color: var(--sorv_azul);
   text-shadow: -1px -1px 0 var(--sorv_claro), 1px -1px 0 var(--sorv_claro),
     -1px 1px 0 var(--sorv_claro), 1px 1px 0 var(--sorv_claro),
     3px 12px 5px var(--sorv_claro);
