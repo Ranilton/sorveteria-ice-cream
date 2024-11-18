@@ -1,128 +1,124 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32"
-            href="assets/icon_log.png" />
-        <link rel="stylesheet" href="estilo_milk.css">
-        <title>Milkshake</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
-                <h1 class="logo">
-                    Sorveteria <br />
-                    Vasconcelos
-                </h1>
-                <a href="index.html"><img class="img" src="assets/icon_log.png"
-                        alt="SorveMar" />
-                </a>
-            </nav>
-        </header>
-        <h1>ESCOLHA O SEU MILKSHAKE</h1>
-        
-        <article>
-            <section>
-                <div class="TipoMilk">
-                    <label for="milk-tamanho">Milkshake:</label>
-                    <select id="milk-tamanho" onchange="mostrarSabores ('')">
-                        <option value>Selecione</option>
-                        <option value="Milkshake300">Milkshake - 300 ml</option>
-                        <option value="Milkshake500">Milkshake - 500 ml</option>
-    
-                    </select>
-                    <div class="ver_select">
-                        <div>
-                            <h1>Milkshake - 300 ml</h1>
-                            <h3>R$ 0,00</h3>
-                            <p>notas</p>
-                        </div>
-                        <img src="assets/milkshake.png" alt>
-                    </div>
-    
-                    <label for="milk-quantidade">Quantidade:</label>
-                    <input type="number" id="milk-quantidade" min="1" value="1">
-    
-                    <button class="mostrar"
-                        onclick="toggleSabores('copinho')">Mostrar/Ocultar
-                        Sabores</button>
-                </div>
-    
-                <div class="ingredientes_1">
-    
-                    <div class="ingredientes" id="Sabores">
-                        <label>Escolhas:</label>
-                        <div id="Sabores">
-                            <label><input type="checkbox"
-                                    value="creme">Creme</label>
-                            <label><input type="checkbox" value="bananito">
-                                Bananito</label>
-                            <label><input type="checkbox" value="chocolate">
-                                Chocolate</label>
-                            <label><input type="checkbox" value="unicornio">
-                                Unicornio</label>
-                        </div>
-                    </div>
-                </div>
-            </section>
-    
-            <section>
-                <div class="TipoMilk">
-                    <label for="milk-tamanho">Milkshake Especial:</label>
-                    <select id="milk-tamanho" onchange="mostrarSabores ('')">
-                        <option value>Selecione</option>
-                        <option value="Milkshake300">Milkshake Especial - 300
-                            ml</option>
-                        <option value="Milkshake500">Milkshake Especial - 500
-                            ml</option>
-    
-                    </select>
-                    <div class="ver_select">
-                        <div>
-                            <h1>Milkshake Especial- 300 ml</h1>
-                            <h3>R$ 0,00</h3>
-                            <p>notas</p>
-                        </div>
-                        <img src="assets/milkshake_oreo.png" alt>
-                    </div>
-    
-                    <label for="milk-quantidade">Quantidade:</label>
-                    <input type="number" id="milk-quantidade" min="1" value="1">
-    
-                    <button class="mostrar"
-                        onclick="toggleSabores('copinho')">Mostrar/Ocultar
-                        Sabores</button>
-                </div>
-    
-                <div class="ingredientes_1">
-    
-                    <div class="ingredientes" id="Sabores">
-                        <label>Escolhas:</label>
-                        <div id="Sabores">
-                            <label><input type="checkbox" value="creme">Creme</label>
-                            <label><input type="checkbox" value="toff"> Toff</label>
-                            <label><input type="checkbox" value="chokito"> Chokito</label>
-                            <label><input type="checkbox" value="sonho de valsa">
-                               Sonho de Valsa</label>
-                        </div>
-                    </div>
-    
-                </div>
-            </section>
 
-            <div>
-                <div class="valorTotal">
-                    <h3>valor Total=</h3>
-                    <h3>R$ 0,00</h3>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon_log.png" />
+    <link rel="stylesheet" href="estilo_milk.css">
+    <title>Milkshake</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
+            <h1 class="logo">
+                Sorveteria <br />
+                Vasconcelos
+            </h1>
+            <a href="index.html"><img class="img" src="assets/icon_log.png" alt="SorveMar" />
+            </a>
+        </nav>
+    </header>
+    <h1>ESCOLHA O SEU MILKSHAKE</h1>
+
+    <article>
+        <section>
+            <div class="TipoMilk">
+                <label for="milk-tamanho">Milkshake:</label>
+                <select id="milk-tamanho" onchange="mostrarSabores ('')">
+                    <option value>Selecione</option>
+                    <option value="Milkshake300" data-price="12.00">Milkshake - 300 ml</option>
+                    <option value="Milkshake500" data-price="17.00">Milkshake - 500 ml</option>
+
+                </select>
+                <div class="ver_select">
+                    <div>
+                        <h1>Milkshake - 300 ml</h1>
+                        <h3>R$ 0,00</h3>
+                        <p>notas</p>
+                    </div>
+                    <img src="assets/milkshake.png" alt>
                 </div>
-                <button class="shopping"><img class="car"
-                        src="assets/shopping.png"
-                        alt></button>
+
+                <label for="milk-quantidade">Quantidade:</label>
+                <input type="number" id="milk-quantidade" min="1" value="1">
+
+                <button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
+                    Sabores</button>
+            </div>
+
+            <div class="ingredientes_1">
+
+                <div class="ingredientes" id="Sabores">
+                    <label>Escolhas:</label>
+                    <div id="Sabores">
+                        <label><input type="checkbox" value="creme">Creme</label>
+                        <label><input type="checkbox" value="bananito">
+                            Bananito</label>
+                        <label><input type="checkbox" value="chocolate">
+                            Chocolate</label>
+                        <label><input type="checkbox" value="unicornio">
+                            Unicornio</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="TipoMilk">
+                <label for="milk-tamanho">Milkshake Especial:</label>
+                <select id="milk-tamanho" onchange="mostrarSabores ('')">
+                    <option value>Selecione</option>
+                    <option value="Milkshake300">Milkshake Especial - 300
+                        ml</option>
+                    <option value="Milkshake500">Milkshake Especial - 500
+                        ml</option>
+
+                </select>
+                <div class="ver_select">
+                    <div>
+                        <h1>Milkshake Especial- 300 ml</h1>
+                        <h3>R$ 0,00</h3>
+                        <p>notas</p>
+                    </div>
+                    <img src="assets/milkshake_oreo.png" alt>
+                </div>
+
+                <label for="milk-quantidade">Quantidade:</label>
+                <input type="number" id="milk-quantidade" min="1" value="1">
+
+                <button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
+                    Sabores</button>
+            </div>
+
+            <div class="ingredientes_1">
+
+                <div class="ingredientes" id="Sabores">
+                    <label>Escolhas:</label>
+                    <div id="Sabores">
+                        <label><input type="checkbox" value="creme">Creme</label>
+                        <label><input type="checkbox" value="toff"> Toff</label>
+                        <label><input type="checkbox" value="chokito"> Chokito</label>
+                        <label><input type="checkbox" value="sonho de valsa">
+                            Sonho de Valsa</label>
+                    </div>
+                </div>
 
             </div>
-        </article>
+        </section>
 
-    </body>
+        <div>
+            <div class="valorTotal">
+                <h3>valor Total=</h3>
+                <h3>R$ 0,00</h3>
+            </div>
+            <button class="shopping"><img class="car" src="assets/shopping.png" alt></button>
+
+        </div>
+    </article>
+
+</body>
+
 </html>

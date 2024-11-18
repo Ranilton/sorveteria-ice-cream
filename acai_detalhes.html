@@ -1,125 +1,126 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" type="image/png" sizes="32x32"
-            href="assets/icon_log.png" />
-        <link rel="stylesheet" href="estilo_acai.css">
-        <title>Açaí</title>
-    </head>
-    <body>
-        <header>
-            <nav>
-                <img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
-                <h1 class="logo">
-                    Sorveteria <br />
-                    Vasconcelos
-                </h1>
-                <a href="index.html"><img class="img" src="assets/icon_log.png"
-                        alt="SorveMar" />
-                </a>
-            </nav>
-        </header>
-        <h1>MONTE SEU AÇAÍ</h1>
-        <section>
-            <div class="TipoAcai">
-                <label for="acai-tamanho">Monte Seu Açaí:</label>
-                <select id="acai-tamanho" onchange="">
-                    <option value>Selecione</option>
-                    <option value="pequeno">Pequeno - 200 ml</option>
-                    <option value="medio">Médio - 300 ml</option>
-                    <option value="grande">Grande - 500 ml</option>
-                </select>
-                <div class="ver_select">
-                    <div>
-                        <h2>Médio - 300 ml</h2>
-                        <h3>R$ 0,00</h3>
-                        <p>notas</p>
-                    </div>
-                    <img src="assets/açaí.png" alt>
-                </div>
-                <label for="copinho-quantidade">Quantidade:</label>
-                <input type="number" id="copinho-quantidade" min="1" value="1">
 
-                <button class="mostrar"
-                    onclick="toggleSabores('copinho')">Mostrar/Ocultar
-                    Sabores</button>
-            </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icon_log.png" />
+    <link rel="stylesheet" href="estilo_acai.css">
+    <title>Açaí</title>
+</head>
 
-            <div class="complementos_todos">
-
-                <div class="complementos" id="fruts">
-                    <label>Frutas (R$ 1,00):</label>
-                    <div id="frutas">
-                        <label><input type="checkbox"
-                                value="banana">Banana</label>
-                        <label><input type="checkbox"
-                                value="morango">Morango</label>
-                        <label><input type="checkbox" value="kiwi">Kiwi</label>
-                        <label><input type="checkbox"
-                                value="manga">Manga</label>
-                        <label><input type="checkbox" value="uva">Uva</label>
-                    </div>
-                </div>
-
-                <div class="complementos" id="coberturas">
-                    <label>Coberturas/Caldas:</label>
-                    <div id="caldas">
-                        <label><input type="checkbox"
-                                value="leite condensado">Leite
-                            Condensado</label>
-                        <label><input type="checkbox"
-                                value="chocolate">Chocolate</label>
-                        <label><input type="checkbox"
-                                value="morango">Morango</label>
-                        <label><input type="checkbox"
-                                value="chiclete">Chiclete</label>
-                        <label><input type="checkbox" value="acai">Açaí</label>
-                    </div>
-                </div>
-                <div class="complementos" id="compl">
-                    <label>Complementos:</label>
-                    <div id="complementos">
-                        <label><input type="checkbox"
-                                value="granola">Granola</label>
-                        <label><input type="checkbox"
-                                value="amendoim">Amendoim</label>
-                        <label><input type="checkbox"
-                                value="gotas de chocolate">Gotas de
-                            Chocolate</label>
-                        <label><input type="checkbox" value="ovo maltine">Ovo
-                            Maltine</label>
-
-                    </div>
-                </div>
-                <div class="complementos" id="compl_premium">
-                    <label>Complementos Premium (R$ 3,00):</label>
-                    <div id="complemento">
-                        <label><input type="checkbox"
-                                value="creme de avela">Creme de Avelã</label>
-                        <label><input type="checkbox" value="creme branco">Creme
-                            Branco</label>
-                        <label><input type="checkbox"
-                                value="creme de chocolate">Creme de
-                            Chocolate</label>
-                    </div>
-                </div>
-
-            </div>
-
-            <div>
-                <div class="valorTotal">
-                    <h3>valor Total=</h3>
+<body>
+    <header>
+        <nav>
+            <img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
+            <h1 class="logo">
+                Sorveteria <br />
+                Vasconcelos
+            </h1>
+            <a href="index.html"><img class="img" src="assets/icon_log.png" alt="SorveMar" /></a>
+        </nav>
+    </header>
+    <h1>MONTE SEU AÇAÍ</h1>
+    <section>
+        <div class="TipoAcai">
+            <label for="acai-tamanho">Monte Seu Açaí:</label>
+            <select id="acai-tamanho" onchange>
+                <option value>Selecione</option>
+                <option value="pequeno" data-name="Açaí Pequeno" data-price="12.00">Pequeno - 200 ml</option>
+                <option value="medio" data-name="Açai Médio" data-price="14.00">Médio - 300 ml</option>
+                <option value="grande" data-name="Açaí Grande" data-price="17.00">Grande - 500 ml</option>
+            </select>
+            <!--mostra o tamanho selecionado-->
+            <div class="ver_select">
+                <div>
+                    <h2>Médio - 300 ml</h2>
                     <h3>R$ 0,00</h3>
+                    <p>notas</p>
                 </div>
-                <button class="shopping"><img class="car"
-                        src="assets/shopping.png"
-                        alt></button>
+                <img src="assets/açaí.png" alt>
+            </div>
+            <label for="acai-quantidade">Quantidade:</label>
+            <input type="number" id="acai-quantidade" min="1" value="1">
 
+            <button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
+                Sabores</button>
+        </div>
+        <!--todos o complementos-->
+        <div class="complementos_todos">
+            <!--frutas-->
+            <div class="complementos" id="fruts">
+                <label class="titulos">Frutas (R$ 1,00):</label>
+                <div id="frutas">
+                    <label><input type="checkbox" value="banana">Banana</label>
+                    <label><input type="checkbox" value="morango">Morango</label>
+                    <label><input type="checkbox" value="kiwi">Kiwi</label>
+                    <label><input type="checkbox" value="manga">Manga</label>
+                    <label><input type="checkbox" value="uva">Uva</label>
+                </div>
+            </div>
+            <!--coberturas/caldas-->
+            <div class="complementos" id="coberturas">
+                <label class="titulos">Coberturas/Caldas:</label>
+                <div id="caldas">
+                    <label><input type="checkbox" value="leite condensado">Leite
+                        Condensado</label>
+                    <label><input type="checkbox" value="chocolate">Chocolate</label>
+                    <label><input type="checkbox" value="morango">Morango</label>
+                    <label><input type="checkbox" value="chiclete">Chiclete</label>
+                    <label><input type="checkbox" value="acai">Açaí</label>
+                    <label><input type="checkbox" value="maracuja">Maracuja</label>
+                    <label><input type="checkbox" value="caramelo">Caramelo</label>
+                    <label><input type="checkbox" value="kiwi">Kiwí</label>
+                    <label><input type="checkbox" name="b-i" id="8" value="blue_ice">Blue-Ice</label>
+                </div>
+            </div>
+            <!--complementos-->
+            <div class="complementos" id="compl">
+                <label class="titulos">Complementos:</label>
+                <div id="complementos">
+                    <label><input type="checkbox" value="granola">Granola</label>
+                    <label><input type="checkbox" value="amendoim">Amendoim</label>
+                    <label><input type="checkbox" value="gotas de chocolate">Gotas de Chocolate</label>
+                    <label><input type="checkbox" value="ovo maltine">Ovo Maltine</label>
+                    <label><input type="checkbox" value="granulado">Granulado</label>
+                    <label><input type="checkbox" value="jujuba">Jujuba</label>
+                    <label><input type="checkbox" value="mem">M e M</label>
+                    <label><input type="checkbox" value="chocobool">Chocobool</label>
+                    <label><input type="checkbox" value="maxmallows">Maxmallows</label>
+                </div>
+            </div>
+            <!--complementos premium-->
+            <div class="complementos" id="compl_premium">
+                <label class="titulos">Complementos Premium (R$ 3,00):</label>
+                <div id="complemento">
+                    <label><input type="checkbox" value="creme de avela">Creme de Avelã</label>
+                    <label><input type="checkbox" value="creme branco">Creme Branco</label>
+                    <label><input type="checkbox" value="creme de chocolate">Creme de Chocolate</label>
+                    <label><input type="checkbox" value="mousse de limão">Mousse de limão</label>
+                    <label><input type="checkbox" value="mousse de maracuja">Mousse de Maracuja</label>
+                    <label><input type="checkbox" value="sorvete de creme">Sorvete de Creme</label>
+                    <label><input type="checkbox" value="chocolate maltado">Chocolate Maltado</label>
+                </div>
             </div>
 
-        </section>
+        </div>
 
-    </body>
+        <div>
+            <div class="valorTotal">
+                <h3>valor Total=</h3>
+                <h3>R$ 0,00</h3>
+                <div id="acai_escolhido">
+                    <!--o açaí escolhido deve ser mostrado aqui-->
+                </div>
+            </div>
+            <button class="shopping">Salvar no Carrinho</button>
+            <button class="shopping"><a href="carrinho.html"><img class="car" src="assets/shopping.png"
+                        alt="Carrinho"></a></button>
+
+        </div>
+
+    </section>
+
+</body>
+
 </html>

@@ -1,109 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="icon" type="image/png" sizes="32x32"
-			href="assets/icon_log.png" />
-		<link rel="stylesheet" href="estilo_sorvetes.css">
-		<title>Sorvetes</title>
-	</head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" sizes="32x32" href="assets/icon_log.png" />
+	<link rel="stylesheet" href="estilo_sorvetes.css">
+	<title>Sorvetes</title>
+</head>
 
-	<body>
-		<header>
-			<nav>
-				<img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
-				<h1 class="logo">
-					Sorveteria <br />
-					Vasconcelos
-				</h1>
-				<a href="index.html"><img class="img" src="assets/icon_log.png"
-						alt="SorveMar" />
-				</a>
-			</nav>
-		</header>
-		<h1>ESCOLHA O SORVETE</h1>
-		<section>
-			<div class="TipoSorvete">
-				<label for="copinho-tamanho">Escolha o Sorvete:</label>
-				<select id="copinho-tamanho" onchange="mostrarSabores ('copinho')">
-					<option value>Selecione</option>
-					<option value="copinho">Copinho</option>
-					<option value="casquinha">casquinha</option>
-					<option value="Cestinha">Cestinha</option>
-				</select>
-				<div class="ver_select">
-					<div>
-						<h1>Copinho</h1>
-						<h3>R$ 0,00</h3>
-						<p>notas</p>
-					</div>
-					<img src="assets/copinho.png" alt>
-				</div>
-
-				<label for="copinho-tamanho">Escolha o tamanho:</label>
-				<select id="copinho-tamanho" onchange="mostrarSabores('copinho')">
-					<option value>Selecione um tamanho</option>
-					<option value="pequeno">Pequeno =
-						<p>valor</p>
-					</option>
-					<option value="medio">Médio = <p>valor</p>
-					</option>
-					<option value="grande">Grande =
-						<p>valor</p>
-					</option>
-				</select>
-				<label for="copinho-quantidade">Quantidade:</label>
-				<input type="number" id="copinho-quantidade" min="1" value="1">
-
-				<button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
-					Sabores</button>
-			</div>
-
-			<div class="sabor_1e2">
-
-				<div class="sabor" id="Sabores">
-					<label>Escolha os sabores:</label>
-					<div id="Sabores 1">
-						<label><input type="checkbox" value="creme">Creme</label>
-						<label><input type="checkbox" value="banana">
-							Banana</label>
-						<label><input type="checkbox" value="chocolate">
-							Chocolate</label>
-						<label><input type="checkbox" value="morango">
-							Morango</label>
-					</div>
-				</div>
-
-				<div class="sabor" id="Sabores_Especiais">
-					<label>Escolha sabores Especiais (R$ 1,00):</label>
-					<div id="Sabores 2">
-						<label><input type="checkbox" value="creme"> Creme</label>
-						<label><input type="checkbox" value="banana">
-							Banana</label>
-						<label><input type="checkbox" value="chocolate">
-							Chocolate</label>
-						<label><input type="checkbox" value="morango">
-							Morango</label>
-					</div>
-				</div>
-
-			</div>
-
-			<div>
-				<div class="valorTotal">
-					<h3>valor Total=</h3>
+<body>
+	<header>
+		<nav>
+			<img class="img" src="assets/sorvemar.PNG" alt="SorveMar" />
+			<h1 class="logo">
+				Sorveteria <br />
+				Vasconcelos
+			</h1>
+			<a href="index.html"><img class="img" src="assets/icon_log.png" alt="SorveMar" />
+			</a>
+		</nav>
+	</header>
+	<h1>ESCOLHA O SORVETE</h1>
+	<section>
+		<div class="TipoSorvete">
+			<label for="copinho-tamanho">Escolha o Sorvete:</label>
+			<select id="copinho-tamanho" onchange="mostrarSabores ('copinho')">
+				<option value>Selecione</option>
+				<option value="copinho">Copinho</option>
+				<option value="casquinha">casquinha</option>
+				<option value="Cestinha">Cestinha</option>
+			</select>
+			<div class="ver_select">
+				<div>
+					<h1>Copinho</h1>
 					<h3>R$ 0,00</h3>
+					<p>notas</p>
 				</div>
-				<button class="shopping"><img class="car" src="assets/shopping.png"
-						alt></button>
-
+				<img src="assets/copinho.png" alt>
 			</div>
 
-		</section>
+			<label for="copinho-tamanho">Escolha o tamanho:</label>
+			<select id="copinho-tamanho" onchange="mostrarSabores('copinho')">
+				<option value>Selecione um tamanho</option>
+				<option value="pequeno">Pequeno =
+					<p>valor</p>
+				</option>
+				<option value="medio">Médio = <p>valor</p>
+				</option>
+				<option value="grande">Grande =
+					<p>valor</p>
+				</option>
+			</select>
+			<label for="copinho-quantidade">Quantidade:</label>
+			<input type="number" id="copinho-quantidade" min="1" value="1">
 
-		<style src="script_sorvete.js"></style>
-	</body>
+			<button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
+				Sabores</button>
+		</div>
+
+		<div class="sabor_1e2">
+
+			<div class="sabor" id="Sabores">
+				<label>Escolha os sabores:</label>
+				<div id="Sabores 1">
+					<label><input type="checkbox" value="creme">Creme</label>
+					<label><input type="checkbox" value="banana">
+						Banana</label>
+					<label><input type="checkbox" value="chocolate">
+						Chocolate</label>
+					<label><input type="checkbox" value="morango">
+						Morango</label>
+				</div>
+			</div>
+
+			<div class="sabor" id="Sabores_Especiais">
+				<label>Escolha sabores Especiais (R$ 1,00):</label>
+				<div id="Sabores 2">
+					<label><input type="checkbox" value="creme"> Creme</label>
+					<label><input type="checkbox" value="banana">
+						Banana</label>
+					<label><input type="checkbox" value="chocolate">
+						Chocolate</label>
+					<label><input type="checkbox" value="morango">
+						Morango</label>
+				</div>
+			</div>
+
+		</div>
+
+		<div>
+			<div class="valorTotal">
+				<h3>valor Total=</h3>
+				<h3>R$ 0,00</h3>
+			</div>
+			<button class="shopping"><img class="car" src="assets/shopping.png" alt></button>
+
+		</div>
+
+	</section>
+
+	<style src="script_sorvete.js"></style>
+</body>
 
 </html>
