@@ -23,14 +23,21 @@
 	</header>
 	<h1>ESCOLHA O SORVETE</h1>
 	<section>
+		<!--tipo-->
 		<div class="TipoSorvete">
 			<label for="copinho-tamanho">Escolha o Sorvete:</label>
 			<select id="copinho-tamanho" onchange="mostrarSabores ('copinho')">
 				<option value>Selecione</option>
-				<option value="copinho">Copinho</option>
-				<option value="casquinha">casquinha</option>
-				<option value="Cestinha">Cestinha</option>
+				<option value="copinho" data-price="5.00">Copinho Pequeno</option>
+				<option value="copinho" data-price="9.00">Copinho Médio</option>
+				<option value="copinho" data-price="12.00">Copinho Grande</option>
+				<option value="casquinha" data-price="7.00">Casquinha Pequeno</option>
+				<option value="casquinha" data-price="10.00">Casquinha Médio</option>
+				<option value="casquinha" data-price="12.00">Casquinha Grande</option>
+				<option value="Cestinha" data-price="10.00">Cestinha - 2 Sabores</option>
+				<option value="Cestinha" data-price="13.00">Cestinha - 3 Sabores</option>
 			</select>
+			<!--mostra a escolha-->
 			<div class="ver_select">
 				<div>
 					<h1>Copinho</h1>
@@ -40,50 +47,58 @@
 				<img src="assets/copinho.png" alt>
 			</div>
 
-			<label for="copinho-tamanho">Escolha o tamanho:</label>
-			<select id="copinho-tamanho" onchange="mostrarSabores('copinho')">
-				<option value>Selecione um tamanho</option>
-				<option value="pequeno">Pequeno =
-					<p>valor</p>
-				</option>
-				<option value="medio">Médio = <p>valor</p>
-				</option>
-				<option value="grande">Grande =
-					<p>valor</p>
-				</option>
-			</select>
 			<label for="copinho-quantidade">Quantidade:</label>
 			<input type="number" id="copinho-quantidade" min="1" value="1">
 
 			<button class="mostrar" onclick="toggleSabores('copinho')">Mostrar/Ocultar
 				Sabores</button>
 		</div>
-
+		<!-- sabores-->
 		<div class="sabor_1e2">
-
+			<!-- sabores-->
 			<div class="sabor" id="Sabores">
-				<label>Escolha os sabores:</label>
+				<label class="titulos">Escolha os sabores:</label>
 				<div id="Sabores 1">
 					<label><input type="checkbox" value="creme">Creme</label>
-					<label><input type="checkbox" value="banana">
-						Banana</label>
-					<label><input type="checkbox" value="chocolate">
-						Chocolate</label>
-					<label><input type="checkbox" value="morango">
-						Morango</label>
+					<label><input type="checkbox" value="banana">Banana</label>
+					<label><input type="checkbox" value="chocolate">Chocolate</label>
+					<label><input type="checkbox" value="morango">Morango</label>
+					<label><input type="checkbox" value="limao">Limão</label>
+					<label><input type="checkbox" value="milho">Milho</label>
+					<label><input type="checkbox" value="pave">Pavê</label>
+					<label><input type="checkbox" value="amendoim">Amendoim</label>
+					<label><input type="checkbox" value="menta">Menta</label>
+					<label><input type="checkbox" value="unicornio">Unicórnio</label>
+					<label><input type="checkbox" value="doce_de_leite">Doce de Leite</label>
+					<label><input type="checkbox" value="creme_com_passas">Creme com Passas</label>
+					<label><input type="checkbox" value="bubaloo">Bubaloo</label>
+					<label><input type="checkbox" value="napolitano">Napolitano</label>
+					<label><input type="checkbox" value="nata_goiaba">Nata Goiaba</label>
+					<label><input type="checkbox" value="sonho_de_valsa">Sonho de Valsa</label>
+					<label><input type="checkbox" value="flocos">Flocos</label>
+					<label><input type="checkbox" value="coco">Coco</label>
+					<label><input type="checkbox" value="tapioca">Tapioca</label>
+					<label><input type="checkbox" value="coco_zero">Coco Zero</label>
 				</div>
 			</div>
-
+			<!-- sabores Especiais-->
 			<div class="sabor" id="Sabores_Especiais">
-				<label>Escolha sabores Especiais (R$ 1,00):</label>
+				<label class="titulos">Escolha sabores Especiais (R$ 1,00):</label>
 				<div id="Sabores 2">
-					<label><input type="checkbox" value="creme"> Creme</label>
-					<label><input type="checkbox" value="banana">
-						Banana</label>
-					<label><input type="checkbox" value="chocolate">
-						Chocolate</label>
-					<label><input type="checkbox" value="morango">
-						Morango</label>
+					<label><input type="checkbox" value="floresta_negra">Floresta Negra</label>
+					<label><input type="checkbox" value="toffe">Toff</label>
+					<label><input type="checkbox" value="ameixa">Ameixa</label>
+					<label><input type="checkbox" value="caja">Cajá</label>
+					<label><input type="checkbox" value="maracuja">Maracujá</label>
+					<label><input type="checkbox" value="mangaba">Mangaba</label>
+					<label><input type="checkbox" value="ninho">Ninho</label>
+					<label><input type="checkbox" value="ninho_com_nutella">Ninho com Nutella</label>
+					<label><input type="checkbox" value="prestigio">Prestígio</label>
+					<label><input type="checkbox" value="chokito">Chokito</label>
+					<label><input type="checkbox" value="graviola">Graviola</label>
+					<label><input type="checkbox" value="malhacao">Malhação</label>
+					<label><input type="checkbox" value="laka">Laka</label>
+					<label><input type="checkbox" value="tapioca">Tapioca</label>
 				</div>
 			</div>
 
@@ -93,7 +108,11 @@
 			<div class="valorTotal">
 				<h3>valor Total=</h3>
 				<h3>R$ 0,00</h3>
+				<div id="acai_escolhido">
+					<!--os sorvetes escolhidos deve ser mostrado aqui-->
+				</div>
 			</div>
+			<button class="shopping">Salvar no Carrinho</button>
 			<button class="shopping"><img class="car" src="assets/shopping.png" alt></button>
 
 		</div>

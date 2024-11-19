@@ -24,6 +24,7 @@
     <h1>ESCOLHA O SEU MILKSHAKE</h1>
 
     <article>
+        <!--Milk-->
         <section>
             <div class="TipoMilk">
                 <label for="milk-tamanho">Milkshake:</label>
@@ -31,7 +32,6 @@
                     <option value>Selecione</option>
                     <option value="Milkshake300" data-price="12.00">Milkshake - 300 ml</option>
                     <option value="Milkshake500" data-price="17.00">Milkshake - 500 ml</option>
-
                 </select>
                 <div class="ver_select">
                     <div>
@@ -52,29 +52,39 @@
             <div class="ingredientes_1">
 
                 <div class="ingredientes" id="Sabores">
-                    <label>Escolhas:</label>
+                    <label class="titulos">Escolhas:</label>
                     <div id="Sabores">
-                        <label><input type="checkbox" value="creme">Creme</label>
-                        <label><input type="checkbox" value="bananito">
-                            Bananito</label>
-                        <label><input type="checkbox" value="chocolate">
-                            Chocolate</label>
-                        <label><input type="checkbox" value="unicornio">
-                            Unicornio</label>
+                        <label><input type="checkbox" value="bananito">Bananito</label>
+                        <label><input type="checkbox" value="chocolate">Chocolate</label>
+                        <label><input type="checkbox" value="unicornio">Unicornio</label>
+                        <label><input type="checkbox" value="banana">Banana</label>
+                        <label><input type="checkbox" value="prestígio">Prestígio</label>
+                        <label><input type="checkbox" value="menta">Menta</label>
+                        <label><input type="checkbox" value="doce_de_leite">Doce de leite</label>
+                        <label><input type="checkbox" value="chokito">Chokito</label>
+                        <label><input type="checkbox" value="sonho_de_valsa">Sonho de
+                            Valsa</label>
+                        <label><input type="checkbox" value="pave">Pavê</label>
+                        <label><input type="checkbox" value="bubaloo">Bubaloo</label>
+                        <label><input type="checkbox" value="tropical">Tropical</label>
+                        <label><input type="checkbox" value="napolitano">Napolitano</label>
+                        <label><input type="checkbox" value="limao">Limão</label>
+                        <label><input type="checkbox" value="milho_verda">Milho Verda</label>
+                        <label><input type="checkbox" value="nata_goiaba">Nata Goiaba</label>
                     </div>
+                    <button class="shopping">Salvar no Carrinho</button>
                 </div>
             </div>
         </section>
 
+        <!--milk especial-->
         <section>
             <div class="TipoMilk">
                 <label for="milk-tamanho">Milkshake Especial:</label>
                 <select id="milk-tamanho" onchange="mostrarSabores ('')">
                     <option value>Selecione</option>
-                    <option value="Milkshake300">Milkshake Especial - 300
-                        ml</option>
-                    <option value="Milkshake500">Milkshake Especial - 500
-                        ml</option>
+                    <option value="Milkshake300" data-price="15.00">Milkshake Especial - 300 ml</option>
+                    <option value="Milkshake500" data-price="20.00">Milkshake Especial - 500 ml</option>
 
                 </select>
                 <div class="ver_select">
@@ -94,18 +104,25 @@
             </div>
 
             <div class="ingredientes_1">
-
                 <div class="ingredientes" id="Sabores">
-                    <label>Escolhas:</label>
+                    <label class="titulos">Escolhas:</label>
                     <div id="Sabores">
-                        <label><input type="checkbox" value="creme">Creme</label>
-                        <label><input type="checkbox" value="toff"> Toff</label>
-                        <label><input type="checkbox" value="chokito"> Chokito</label>
-                        <label><input type="checkbox" value="sonho de valsa">
-                            Sonho de Valsa</label>
+                        <label><input type="checkbox" value="toff">Toff</label>
+                        <label><input type="checkbox" value="chokito">Chokito</label>
+                        <label><input type="checkbox" value="sonho de valsa">Sonho de Valsa</label>
+                        <label><input type="checkbox" value="ninho_mais">Ninho Mais</label>
+                        <label><input type="checkbox" value="ninho_trufado">Ninho Trufado</label>
+                        <label><input type="checkbox" value="floresta_negra">Floresta Negra</label>
+                        <label><input type="checkbox" value="amora">Amora</label>
+                        <label><input type="checkbox" value="maracuja">Maracujá</label>
+                        <label><input type="checkbox" value="morango">Morango</label>
+                        <label><input type="checkbox" value="tapioca">Tapioca</label>
+                        <label><input type="checkbox" value="laka">Laka</label>
+                        <label><input type="checkbox" value="graviola">Graviola</label>
+                        <label><input type="checkbox" value="brigadeiro">Brigadeiro</label>
                     </div>
+                    <button class="shopping">Salvar no Carrinho</button>
                 </div>
-
             </div>
         </section>
 
@@ -113,9 +130,11 @@
             <div class="valorTotal">
                 <h3>valor Total=</h3>
                 <h3>R$ 0,00</h3>
+                <div id="milk_escolhido">
+                    <!--o milk escolhido deve ser mostrado aqui-->
+                </div>
             </div>
             <button class="shopping"><img class="car" src="assets/shopping.png" alt></button>
-
         </div>
     </article>
 

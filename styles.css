@@ -28,9 +28,11 @@ article {
 }
 
 header {
+  width: 100%;
   background-color: #f8f8f8;
   background: linear-gradient(to right, var(--grd1) 30%, #6fb9eb 70%, #e6f8fa) 20%;
   z-index: 1;
+  position: fixed;
 }
 
 nav {
@@ -61,6 +63,7 @@ nav {
   padding: 10px;
   border-radius: 15px;
   background-color: #f0f8ff;
+  cursor: pointer;
 }
 
 .nav-links a {
@@ -92,6 +95,7 @@ nav {
   background-position: center;
   text-align: center;
   padding: 50px 20px;
+  padding-top: 100px;
 }
 
 .hero h2 {

@@ -1,113 +1,133 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrinho de Compras</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-      body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f8f8;
-    margin: 0;
-    padding: 20px;
-}
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 20px;
+        }
 
-.container {
-    max-width: 100%;
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-		
-}
-.carr{
-	display: flex;
-}
-.carr div{
-	padding: 50px;
-	border: 5px solid #01cc2d;
-}
+        .container {
+            max-width: 100%;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
 
-h1 {
-    text-align: center;
-}
-h4, p{
-	text-align: center;
-}
+        }
 
-.total {
-    text-align: right;
-    margin-top: 20px;
-}
+        .carr {
+            display: flex;
+        }
 
-.finalizar, .voltar {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-.voltar{
-    margin: 0 10px 0 0;
-}
-.finalizar{
-    margin: 0 0 0 10px;
-}
+        .carr div {
+            padding: 50px;
+            border: 5px solid #01cc2d;
+        }
 
-.finalizar:hover {
-    background-color: #218838;
-}
+        h1 {
+            text-align: center;
+        }
 
-.botao{
-    display: flex;
-}
+        h4,
+        p {
+            text-align: center;
+        }
 
-@media (max-width: 800px) {
+        .total {
+            text-align: right;
+            margin-top: 20px;
+        }
 
-.carr{
-	flex-direction: column;
-}
-.carr div{
-	padding: 15px;
-}
-}
+        .finalizar,
+        .voltar {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
 
+        .voltar {
+            margin: 0 10px 0 0;
+        }
+
+        .finalizar {
+            margin: 0 0 0 10px;
+        }
+
+        .finalizar:hover {
+            background-color: #218838;
+        }
+
+        .botao {
+            display: flex;
+        }
+
+        @media (max-width: 800px) {
+
+            .carr {
+                flex-direction: column;
+            }
+
+            .carr div {
+                padding: 15px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Carrinho de Compras</h1>
-			<div class="carr">
-				<div>
-					<h4>Nome do Produto</h4> <p>Nome do Produto 1</p>
-					<h4>Quantidade</h4><p>2</p>
-					<h4>Tipo do Produto</h4><p>Sorvete</p>
-					<h4>Ingredientes</h4><p>Leite, Açúcar, Creme</p>
-					<h4>Sabores</h4><p>Chocolate, Baunilha</p>
-				 </div>
-				 <div>
-					<h4>Nome do Produto</h4><p>Nome do Produto 2</p>
-					<h4>Quantidade</h4> <p>1</p>
-					<h4>Tipo do Produto</h4> <p>Milkshake</p>
-					<h4>Ingredientes</h4><p>Leite, Sorvete, Chocolate</p>
-					<h4>Sabores</h4><p>Morango, Chocolate</p>
-				 </div>
-			</div>	       
-                <!-- Adicione mais produtos conforme necessário -->
-            </tbody>
+        <div class="carr">
+            <div>
+                <h4>Nome do Produto</h4>
+                <p>Nome do Produto 1</p>
+                <h4>Quantidade</h4>
+                <p>2</p>
+                <h4>Tipo do Produto</h4>
+                <p>Sorvete</p>
+                <h4>Ingredientes</h4>
+                <p>Leite, Açúcar, Creme</p>
+                <h4>Sabores</h4>
+                <p>Chocolate, Baunilha</p>
+            </div>
+            <div>
+                <h4>Nome do Produto</h4>
+                <p>Nome do Produto 2</p>
+                <h4>Quantidade</h4>
+                <p>1</p>
+                <h4>Tipo do Produto</h4>
+                <p>Milkshake</p>
+                <h4>Ingredientes</h4>
+                <p>Leite, Sorvete, Chocolate</p>
+                <h4>Sabores</h4>
+                <p>Morango, Chocolate</p>
+            </div>
+        </div>
+        <!-- Adicione mais produtos conforme necessário -->
+        </tbody>
         </table>
-        
+
         <div class="total">
             <h2>Total: R$ XX,XX</h2>
         </div>
         <div class="botao">
-        <button class="voltar">Voltar</button>
-        <button class="finalizar">Finalizar Compra</button>
+            <button class="voltar">Voltar</button>
+            <button class="finalizar">Finalizar Compra</button>
         </div>
-        
+
     </div>
 </body>
+
 </html>

@@ -90,6 +90,12 @@ label {
   font-weight: bold;
 }
 
+.titulos {
+  text-decoration: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: black;
+}
+
 select,
 input[type="text"],
 input[type="number"] {
