@@ -128,7 +128,7 @@ input[type="number"]:focus {
   font-size: 16px;
   margin-top: 10px;
   display: block;
-  width: 100%;
+  width: 80%;
 }
 
 .mostrar:hover {

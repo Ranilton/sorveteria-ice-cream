@@ -48,6 +48,7 @@ nav {
   color: var(--white);
   font-weight: bolder;
   text-align: center;
+  font-size: 30px;
 }
 
 .nav-links {
@@ -71,11 +72,12 @@ nav {
   color: #b91010;
 }
 
-.carrinho{
- width: 25px;
- height: 25px; 
- 
+.carrinho {
+  width: 25px;
+  height: 25px;
+
 }
+
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -95,7 +97,7 @@ nav {
   background-position: center;
   text-align: center;
   padding: 50px 20px;
-  padding-top: 100px;
+  padding-top: 200px;
 }
 
 .hero h2 {
@@ -373,11 +375,13 @@ footer {
 
 }
 
-
-
 @media (max-width: 320px) {
   .img {
     height: 25px;
+  }
+
+  .logo {
+    font-size: 20px;
   }
 
   nav {
@@ -385,3 +389,4 @@ footer {
 
   }
 }
+

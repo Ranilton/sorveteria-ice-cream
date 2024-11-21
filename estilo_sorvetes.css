@@ -132,7 +132,7 @@ input[type="number"]:focus {
   font-size: 16px;
   margin-top: 10px;
   display: block;
-  width: 100%;
+  width: 80%;
 }
 
 .mostrar:hover {
@@ -176,10 +176,11 @@ input[type="number"]:focus {
   font-size: 16px;
   margin-top: 10px;
   display: block;
-  width: 50vh;
+  width: 25vh;
   height: 50px;
   margin: 15px;
 }
+
 
 .car {
   width: 50px;
