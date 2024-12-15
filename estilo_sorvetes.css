@@ -191,38 +191,3 @@ input[type="number"]:focus {
 .shopping:hover {
   background-color: var(--sorv_escuro);
 }
-
-@media (max-width: 800px) {
-  .menu-toggle {
-    display: flex;
-    /* Botão do menu aparece em telas pequenas */
-  }
-
-  .img {
-    height: 50px;
-  }
-
-  nav {
-    padding: 0 25px;
-  }
-
-  section {
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .select img {
-    width: 20vh;
-  }
-
-  .sabor_1e2 {
-    flex-direction: column;
-  }
-}
-
-@media (max-width: 320px) {
-  .img {
-    height: 25px;
-  }
-}
